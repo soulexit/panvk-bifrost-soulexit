@@ -8,7 +8,15 @@ This page only has the releases, published when a version is stable enough for e
 Source, test builds and development notes are in
 [soulexit/panvk-kirin990](https://github.com/soulexit/panvk-kirin990).
 
-> **Still experimental.** Keep your phone's normal driver installed so you can switch back.
+> **Still experimental.** This driver needs more debugging and testing on different:
+>
+> - phone brands
+> - Android ROMs and versions
+> - apps (Winlator, GameNative, Eden, ARMSX2 and others)
+> - DXVK, VKD3D-Proton and Vegas versions
+>
+> Keep your phone's normal driver installed so you can switch back. Test results, good or
+> bad, help a lot: see [how to report](#something-not-working).
 
 ## Download
 
@@ -23,8 +31,7 @@ Source, test builds and development notes are in
 Install the zip as it is (don't unzip it) from the app's driver manager, then pick it as the
 graphics / Vulkan driver of your container or game.
 
-**Versions:** `1.0.000` → `1.0.001` for smaller improvements, `1.1.000` for bigger milestones.
-Each version here matches a tested build of the source repository (1.0.000 = panvk-kirin990 1.3.0).
+**Versions:** Versioning has been changed for release drivers (1.0.000 = panvk-kirin990 1.3.0).
 
 ## Supported GPUs
 
