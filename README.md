@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.png" alt="soulexit's PanVK: Vulkan driver for Mali Bifrost GPUs" width="100%"></p>
+
 # soulexit's PanVK driver
 
 A Vulkan driver for phones with **Mali Bifrost GPUs** (Mali-G52, G72, G76 and relatives).

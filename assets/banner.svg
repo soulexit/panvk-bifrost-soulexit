@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1a1d"/>
+      <stop offset="1" stop-color="#050506"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3b3b"/>
+      <stop offset="1" stop-color="#b80f1c"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <defs>
+    <linearGradient id="bannerbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141416"/><stop offset="1" stop-color="#050506"/>
+    </linearGradient>
+    <radialGradient id="redhaze" cx=".24" cy=".5" r=".45">
+      <stop offset="0" stop-color="#e01b24" stop-opacity=".22"/><stop offset="1" stop-color="#e01b24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bannerbg)"/>
+  <rect width="1280" height="640" fill="url(#redhaze)"/>
+  <rect x="0" y="628" width="1280" height="12" fill="url(#red)"/>
+  <g transform="translate(90 150) scale(0.664)">
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="url(#bg)"/>
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="none" stroke="#e01b24" stroke-opacity=".35" stroke-width="4"/>
+  <!-- chip pins -->
+  <g stroke="url(#red)" stroke-width="14" stroke-linecap="round">
+    <path d="M196 120v-26M256 120v-26M316 120v-26"/>
+    <path d="M196 392v26M256 392v26M316 392v26"/>
+    <path d="M120 196h-26M120 256h-26M120 316h-26"/>
+    <path d="M392 196h26M392 256h26M392 316h26"/>
+  </g>
+  <!-- chip body -->
+  <rect x="120" y="120" width="272" height="272" rx="40" fill="#0b0b0d" stroke="url(#red)" stroke-width="14"/>
+  <!-- S trace -->
+  <g filter="url(#glow)" fill="none" stroke="url(#red)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M316 182H222l-22 22v34l22 22h68l22 22v34l-22 22h-96"/>
+  </g>
+  <circle cx="316" cy="182" r="18" fill="#0b0b0d" stroke="#ff3b3b" stroke-width="10"/>
+  <circle cx="194" cy="336" r="18" fill="#0b0b0d" stroke="#b80f1c" stroke-width="10"/>
+
+</g>
+  <g font-family="Noto Sans, Ubuntu, sans-serif">
+    <text x="510" y="275" font-size="78" font-weight="800" fill="#ffffff">soulexit's <tspan fill="#ff3b3b">PanVK</tspan></text>
+    <text x="512" y="345" font-size="38" font-weight="500" fill="#e6e6e6">Vulkan driver for Mali Bifrost GPUs</text>
+    <text x="512" y="400" font-size="28" fill="#9a9a9f">Mali-G52 · G72 · G76 — no root needed</text>
+    <text x="512" y="480" font-size="26" font-weight="600" fill="#ff3b3b" letter-spacing="1">WINLATOR · GAMENATIVE · EDEN · ARMSX2</text>
+  </g>
+</svg>
