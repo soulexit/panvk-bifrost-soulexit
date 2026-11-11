@@ -15,8 +15,7 @@ Source, test builds and development notes are in
 > - apps (Winlator, GameNative, Eden, ARMSX2 and others)
 > - DXVK, VKD3D-Proton and Vegas versions
 >
-> Keep your phone's normal driver installed so you can switch back. Test results, good or
-> bad, help a lot: see [how to report](#something-not-working).
+> Test results, good or bad, help a lot: see [how to report](#something-not-working).
 
 ## Download
 
