@@ -21,12 +21,12 @@ Source, test builds and development notes are in
 
 ## Download
 
-**[Latest release](https://github.com/soulexit/panvk-bifrost-soulexit/releases/latest)**: 1.0.002
+**[Latest release](https://github.com/soulexit/panvk-bifrost-soulexit/releases/latest)**: 1.0.003
 
 | File | For |
 |---|---|
-| `soulexit-panvk-1.0.002.zip` | Winlator, GameNative, Eden and other apps |
-| `soulexit-panvk-1.0.002-armsx2.zip` | ARMSX2 (same driver, named the way ARMSX2 needs) |
+| `soulexit-panvk-1.0.003.zip` | Winlator, GameNative, Eden and other apps |
+| `soulexit-panvk-1.0.003-armsx2.zip` | ARMSX2 (same driver, named the way ARMSX2 needs) |
 | `panvk-report.exe` | a tool that collects logs when something goes wrong ([below](#something-not-working)) |
 
 Install the zip as it is (don't unzip it) from the app's driver manager, then pick it as the
@@ -62,12 +62,12 @@ Mali-T GPUs. See [other drivers](#other-panvk-drivers) for those.
 | Wrong or missing textures, slow loading | Set **BCn emulation** to **None**: the driver handles these textures itself. |
 | Low FPS in older (DirectX 9) games | Use Box64's **Performance** preset. |
 | Game closes in busy scenes, or other apps get closed | Create `panvk_env.txt` in the phone's **Download** folder with the line `heap_memory_percent=0.42`. |
-| No OpenGL games in Winlator on Android 10 | Add the environment variable `BOX64_LIBGL` = `/data/data/com.winlator.cmod/files/contents/adrenotools/soulexit-panvk-1.0.002/libGL_memfd.so` (use the version you installed) |
+| No OpenGL games in Winlator on Android 10 | Add the environment variable `BOX64_LIBGL` = `/data/data/com.winlator.cmod/files/contents/adrenotools/soulexit-panvk-1.0.003/libGL_memfd.so` (use the version you installed) |
 | A game glitches with a newer DXVK | Try an older DXVK (1.10.3), or the other way around. |
 | A DirectX 12 game asks for feature level 12_0 | Add `VKD3D_FEATURE_LEVEL=12_0` to the container's environment variables. |
 | Black screen with sound on **Huawei** phones with HarmonyOS 4.2 or EMUI 12 (kernel 5.10); `panvk-report`'s GPU self-tests fail there | Update to 1.0.001 or newer. |
 | ARMSX2 closes when the screen rotates (black screen, then it exits) | Update to 1.0.002 or newer. |
-| ARMSX2 games are slow or stutter | In ARMSX2's graphics settings, set **Hardware Download Mode** to **Unsynchronized**. |
+| ARMSX2 games are slow or stutter | Update to 1.0.003 or newer, and in ARMSX2's graphics settings set **Hardware Download Mode** to **Unsynchronized**. |
 | ARMSX2 doesn't list the driver | Install the `-armsx2` zip. |
 
 ## Something not working?
